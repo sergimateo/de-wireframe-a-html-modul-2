@@ -1,0 +1,115 @@
+body {
+    background-color: #b8b0b0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 1000px;
+    height: 980px;
+    /* display: flex; */
+    justify-content: center;
+    margin: 20px auto;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+
+    background-color:  #b8b0b0;
+}
+.navbar {
+    font-size: 17px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0;
+    margin-bottom: 20px;
+    /* max-height: 120px; */
+    background-color: #433d3c;
+}
+.logo {
+    display: flex;
+    margin: 30px 30px 30px 30px; 
+    height: 60px ;
+    width: 200px;
+    /* border: 1px solid; */
+    background-color: #e6e6e6;
+}
+.three-circles {
+    display: flex;
+    margin-right: 20px;
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: #e6e6e6;
+}
+
+.five-menu-items {
+    display: flex;
+    flex-basis: auto;
+    /* flex-wrap: wrap; */
+    height: 45px;
+    align-content: space-between;
+    /* justify-content: center; */
+    
+}
+
+.five-menu-items div {
+    /* max-width: 100%; */
+    width: 5000px;
+    margin-right: 3px;
+    list-style: none;
+    /* border: 1px solid; */
+    background-color: #e7e7de;
+}
+
+.middle-div {
+    margin: 0 20px;
+}
+.three-news-menu {
+    display: flex;
+    height: 190px;
+    flex-basis: auto;
+    align-content: space-between;
+    /* justify-content: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.three-news-menu div {
+    list-style: none;
+    width: 5000px;
+    /* border: 1px solid; */
+    background-color: #e7e7de;
+}
+
+.main-section {
+    background-color: aquamarine;
+    height: 450px;
+    margin-bottom: 20px;
+    background-color: #e7e7de;
+
+}
+
+.main-article {
+    display: flex;
+    border: 1px solid;
+    width: 600px;
+    height: 448px;
+    margin: auto;
+    background-color: #433d3c;
+    /* align-content: space-betwen; */
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 70px;
+    background-color: #433d3c;
+}
