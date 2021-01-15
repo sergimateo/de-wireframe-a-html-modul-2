@@ -120,18 +120,23 @@ header {
 }
 
 .three-news-menu div img{
-/* width: ; */
-height: max(65%);
+width: auto;
+height: 60%;
 margin: 2% auto 0 auto;
 
 }
 
 .three-news-menu p{
-    margin: 1% auto 2%;
+    margin: 5px auto;
     font-weight: bold;
+    height: auto;
     font-size: clamp(20px, 0.5rem, 31vh);
     color: #E6E7E9;
 
+}
+
+.three-news-menu .btn{
+    margin 10px auto;
 }
 /* Estils de Secció Contingut Central */
 .main-section {
