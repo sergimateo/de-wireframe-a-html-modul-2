@@ -4,52 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Winex</title>
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/styles/styles.css" />
-    
     <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/5b57351411.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5b57351411.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">    
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body>
     <div class="container">
-      <nav class="navbar">
-        <!-- <div class="menu-btn">
-          <i class="fas fa-bars fa-2x"></i>
-        </div> -->
-
+      <!-- Cabecera -->
+      <header class="navbar">
         <div class="logo">
-          <img src="/images/winex-logo.jpg" alt="logo">
+          <img src="/images/winex-logo.jpg" alt="logo" />
         </div>
         <div class="three-circles">
-            <i class="fab fa-twitter-square fa-2x"></i>
-            <i class="fab fa-instagram fa-2x"></i>
-            <i class="fab fa-facebook fa-2x"></i>
-            <!-- <div class="circle"></div> -->
+          <i class="fab fa-twitter-square fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-facebook fa-2x"></i>
         </div>
-        <!-- Navegacion barra de cerca a l'esquerra i 3 boles a la dreta -->
-      </nav>
-
+      </header>
+      <!-- Barra de menus -->
       <div class="five-menu-items">
         <div>Home</div>
-        <div>Winex Products</div>
+        <div>Our Cars</div>
         <div>Our Services</div>
         <div>News</div>
-        <div>About us</div>
+        <div class="five-menu-items-rightmost-div">About us</div>
       </div>
+
+      <!-- Elements destacats -->
       <section class="three-news-menu">
-        <div></div>
-        <div class="middle-div"></div>
-        <div></div>
+        <div>
+          <img src="/images/cars1-650x406.jpg" alt="cars1">
+          <p>Diamond Car for Customer</p>
+          <button class="btn">Accedir</button>
+        </div>
+        <div class="three-news-menu-middle-div">
+          <img src="/images/cars2-650x406.jpg" alt="cars2">
+          <p>Diamond Car for Customer</p>
+          <button class="btn">Accedir</button>
+        </div>
+        <div>
+          <img src="/images/cars39-1-650x406.jpg" alt="cars39">
+          <p>Diamond Car for Customer</p>
+          <button class="btn">Accedir</button>
+        </div>
       </section>
-
+      <!-- Contingut central -->
       <section class="main-section">
-        <article class="main-article"></article>
+        <article class="main-article">
+          <div class="article">
+            <img src="/images/cars40-1-650x406.jpg" alt="cars40">
+            <div>
+              <p>text description of the image with some great HTML elements for every single gallery image text description of the image with some great HTML elements for every single gallery image</p>
+              <button class="btn">Veure més</button>
+            </div>  
+          </div>
+        <div class="article">
+          <img src="/images/cars59-1-650x406.jpg" alt="cars40">
+          <div>
+            <p>text description of the image with some great HTML elements for every single gallery image text description of the image with some great HTML elements for every single gallery image</p>
+          <button class="btn">Veure més</button>
+        </div>
+      </div>
+        <div class="article">
+          <img src="/images/cars60-1-650x406.jpg" alt="cars40">
+          <div><p>text description of the image with some great HTML elements for every single gallery image text description of the image with some great HTML elements for every single gallery image</p>
+          <button class="btn">Veure més</button>
+        </div>
+        </div>
+        <div class="article">
+          <img src="/images/cars7-650x406.jpg" alt="cars40">
+          <div>
+            <p class="p-article">text description of the image with some great HTML elements for every single gallery image text description of the image with some great HTML elements for every single gallery image</p>
+            <button class="btn">Veure més</button>
+          </div>
+        </div>
+        </article>
       </section>
 
-      <footer class="footer"> Copyright</footer>
+      <!-- <h2> hola
+        <?php
+            echo "php is working";
+        ?>
+    </h2> -->
+
+      <!-- <?php include 'footer.php'; ?> -->
+      <!-- Peu de pagina -->
+      <footer class="footer">
+        © Copyright 2021 - SMC Designs
+        <div class="footer-box">
+          <i class="fas fa-envelope-square fa-1x footer-icon"></i>
+          <a href="mailto:sergimateo@gmail.com" class="mailto">Contact Us</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

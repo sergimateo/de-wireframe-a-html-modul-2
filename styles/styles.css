@@ -1,25 +1,30 @@
+ /* Estils Globlals */
 body {
     background-color: #E6E7E9;
     margin: 0;
+    width: 100vw;
 }
 
 .container {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    width: 1000px;
+    width: clamp(25px, 1000px, 70%);
     height: 980px;
     /* display: flex; */
     justify-content: center;
     margin: 20px auto;
     background-color: #E6E7E9;
 }
-.navbar {
-    font-size: 17px;
+
+/* Estils Barra de Capçalera */
+header {
+    /* font-size: 17px; */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%2397989a' fill-opacity='0.41'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    height: 12%;
+    /* 120px; */
     padding: 0;
     margin-bottom: 20px;
     max-height: 120px;
@@ -27,26 +32,27 @@ body {
 }
 .logo {
     display: flex;
-    margin: 30px 30px 30px 30px; 
+    margin: 30px 30px 30px 30px;
     height: 60px ;
     width: 200px;
     /* border: 1px solid; */
     background-color: #D2D3D5;
 }
-img {
+.logo img {
     max-width: 100%;
     max-height: 100%;
-} 
+}
 
 .three-circles {
     display: flex;
     margin-right: 20px;
+    align-content: center;
 }
 
 .circle {
     height: 40px;
     width: 40px;
-    margin-left: 10px;
+    margin: 0 10px;
     border-radius: 50%;
     align-content: center;
     /* border: 1px solid; */
@@ -54,59 +60,79 @@ img {
 }
 .fa-twitter-square{
     color: #E6E7E9;
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
 .fa-instagram{
     color: #E6E7E9;
-    margin-right: 20px;
+    margin: 0 10px;
 }
 .fa-facebook{
     color: #E6E7E9;
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
+/* Estils barra de menus */
 .five-menu-items {
+    width: 100%;
     display: flex;
-    flex-basis: auto;
-    /* flex-wrap: wrap; */
     height: 45px;
-    align-content: space-between;
-    /* justify-content: center; */
-    
 }
 
 .five-menu-items div {
-    /* max-width: 100%; */
-    width: 5000px;
-    margin-right: 3px;
+    width: 22%;
+    margin-right: 5px;
     list-style: none;
-    /* border: 1px solid; */
     background-color: #97989A;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.middle-div {
-    margin: 0 20px;
+.five-menu-items .five-menu-items-rightmost-div {
+    margin-right: 0;
+
 }
+
+/* Estils de secció Elements Destacats */
+
 .three-news-menu {
     display: flex;
     height: 190px;
     flex-basis: auto;
     align-content: space-between;
-    /* justify-content: center; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .three-news-menu div {
     list-style: none;
-    width: 5000px;
+    width: 32%;
     /* border: 1px solid; */
     background-color: #858688;
+    display: inline;
 }
 
+.three-news-menu-middle-div {
+    margin: 0 2%;
+}
+
+.three-news-menu div img{
+width: 15vw;
+margin: 2% auto 0 auto;
+
+}
+
+.three-news-menu p{
+    margin: 1% auto 2%;
+    font-weight: bold;
+    color: #E6E7E9;
+
+}
+/* Estils de Secció Contingut Central */
 .main-section {
-    background-color: aquamarine;
     height: 450px;
     margin-bottom: 20px;
     background-color: #858688;
@@ -114,19 +140,56 @@ img {
 }
 
 .main-article {
-    display: flex;
-    border: 1px solid;
-    width: 600px;
-    height: 448px;
+    display: inline-block;
+    width: clamp(60%, 600px, 100%);
+    height: 100%;
     margin: auto;
     background-color: #4B4B4D;
-    /* align-content: space-betwen; */
-
 }
+
+.main-article .article {
+    display:inline-flex;
+    width: 100%;
+    height: 25%;
+}
+.main-article .article div {
+    margin-right: 10px;
+}
+
+.main-article div img {
+    
+    height: 80%;
+    margin: 10px 10px;
+}
+
+.article div p{
+    margin-right: 10px;
+    text-align: justify;
+    font-size: 0.8rem;
+    width: 100%;
+    font-weight: bold;
+    color:#E6E7E9
+}
+
+/* Estils de Peu de pagina */
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     height: 70px;
     background-color: #4B4B4D;
+    color: #fff;
+}
+
+.fa-envelope-square{
+    margin:0 10px 0 20px;
+}
+
+.mailto {
+    color:#fff;
+}
+.mailto:hover{
+    color:chocolate;
+
 }
